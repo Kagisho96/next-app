@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import Link from 'next/link'
+import ProductCard from './components /ProductCard'
 
 export default function Home() {
   return (
@@ -109,6 +111,11 @@ export default function Home() {
   //       </a>
   //     </div>
   //   </main>
-  <main><h1>Pitsi</h1></main>
+  <main><h1>Pitsi</h1> 
+  <Link href={'users'}>
+    <button className='border py-1 px-2 rounded-md bg-red-100 my-2'>Display Users</button>
+    </Link>
+  <ProductCard/>
+  </main>
   )
 }
